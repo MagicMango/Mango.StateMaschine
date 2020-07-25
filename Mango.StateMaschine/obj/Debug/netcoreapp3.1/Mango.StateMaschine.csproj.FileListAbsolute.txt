@@ -1,0 +1,16 @@
+C:\Users\stefa\Source\Repos\Mango.StateMaschine\Mango.StateMaschine\bin\Debug\netcoreapp3.1\Mango.StateMaschine.exe
+C:\Users\stefa\Source\Repos\Mango.StateMaschine\Mango.StateMaschine\bin\Debug\netcoreapp3.1\Mango.StateMaschine.deps.json
+C:\Users\stefa\Source\Repos\Mango.StateMaschine\Mango.StateMaschine\bin\Debug\netcoreapp3.1\Mango.StateMaschine.runtimeconfig.json
+C:\Users\stefa\Source\Repos\Mango.StateMaschine\Mango.StateMaschine\bin\Debug\netcoreapp3.1\Mango.StateMaschine.runtimeconfig.dev.json
+C:\Users\stefa\Source\Repos\Mango.StateMaschine\Mango.StateMaschine\bin\Debug\netcoreapp3.1\Mango.StateMaschine.dll
+C:\Users\stefa\Source\Repos\Mango.StateMaschine\Mango.StateMaschine\bin\Debug\netcoreapp3.1\Mango.StateMaschine.pdb
+C:\Users\stefa\Source\Repos\Mango.StateMaschine\Mango.StateMaschine\obj\Debug\netcoreapp3.1\Mango.StateMaschine.csprojAssemblyReference.cache
+C:\Users\stefa\Source\Repos\Mango.StateMaschine\Mango.StateMaschine\obj\Debug\netcoreapp3.1\Mango.StateMaschine.AssemblyInfoInputs.cache
+C:\Users\stefa\Source\Repos\Mango.StateMaschine\Mango.StateMaschine\obj\Debug\netcoreapp3.1\Mango.StateMaschine.AssemblyInfo.cs
+C:\Users\stefa\Source\Repos\Mango.StateMaschine\Mango.StateMaschine\obj\Debug\netcoreapp3.1\Mango.StateMaschine.dll
+C:\Users\stefa\Source\Repos\Mango.StateMaschine\Mango.StateMaschine\obj\Debug\netcoreapp3.1\Mango.StateMaschine.pdb
+C:\Users\stefa\Source\Repos\Mango.StateMaschine\Mango.StateMaschine\obj\Debug\netcoreapp3.1\Mango.StateMaschine.genruntimeconfig.cache
+C:\Users\stefa\Source\Repos\Mango.StateMaschine\Mango.StateMaschine\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\stefa\Source\Repos\Mango.StateMaschine\Mango.StateMaschine\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\stefa\Source\Repos\Mango.StateMaschine\Mango.StateMaschine\obj\Debug\netcoreapp3.1\Mango.StateMaschine.csproj.CoreCompileInputs.cache
+C:\Users\stefa\Source\Repos\Mango.StateMaschine\Mango.StateMaschine\obj\Debug\netcoreapp3.1\Mango.StateMaschine.csproj.CopyComplete
