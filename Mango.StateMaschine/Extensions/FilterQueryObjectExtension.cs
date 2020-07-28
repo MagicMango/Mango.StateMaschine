@@ -1,11 +1,13 @@
 ﻿using Mango.StateMaschine.Filter;
+using System;
 using System.Linq;
+using System.Runtime.Serialization;
 
 namespace Mango.StateMaschine.Extensions
 {
     public static class FilterQueryObjectExtension
     {
-        public static string ToWhereClause<TObject>(this FilterQueryObject<TObject> filterQueryObject)
+        public static (string where, object[] parameters) ToWhereClause<TObject>(this FilterQueryObject<TObject> filterQueryObject)
             where TObject : class
         {
             string where = null;
@@ -18,6 +20,7 @@ namespace Mango.StateMaschine.Extensions
 
                 where += filter.Method switch
                 {
+                    "Equals" => filter.Property + string.Format("==@{0} &&", i),
                     "Contains" => filter.Property + string.Format(".Contains(@{0}) &&", i),
                     "StartsWith" => filter.Property + string.Format(".StartsWith(@{0}) &&", i),
                     "EndsWith" => filter.Property + string.Format(".EndsWith(@{0}) &&", i),
@@ -25,13 +28,7 @@ namespace Mango.StateMaschine.Extensions
                 };
                 i++;
             }
-            return  where?.Substring(0, where.Length - 2) ?? "";
-        }
-
-        public static object[] GetObjectValues<TObject>(this FilterQueryObject<TObject> filterQueryObject)
-           where TObject : class
-        {
-            return filterQueryObject.PropertieFilters.Select(x => x.Value).ToArray();
+            return  (where?.Substring(0, where.Length - 2) ?? "", filterQueryObject.PropertieFilters.Select(x => x.Value).ToArray());
         }
     }
 }

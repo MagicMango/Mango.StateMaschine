@@ -52,21 +52,26 @@ namespace Mango.StateMaschine
 
             var filterprops = new FilterQueryObject<ObjectToFilter>() 
             { 
-                Object = new[] { new ObjectToFilter() { Id = 5, MyString = "Hello" } },
+                Object = new[] { new ObjectToFilter() { Id = 5, MyString = "Hello", MyObjects = new ObjectToFilter() { Id = 4, MyString = "World" } },  new ObjectToFilter() { Id = 7, MyString = "Exclude" } },
                 PropertieFilters = new List<FilterProperty>(new [] { 
                     new FilterProperty() 
                     {  
                         Method = "Contains",
                         Property = "MyString",
                         Value = "Hello"
-                    } 
+                    },
+                    new FilterProperty()
+                    {
+                        Method = "Equals",
+                        Property = "MyObjects.Id",
+                        Value = 4
+                    }
                 })
             };
 
             var where = filterprops.ToWhereClause();
-            var objects = filterprops.GetObjectValues();
 
-            var r = filterprops.Object.AsQueryable().Where(where, objects).ToArray();
+            var r = filterprops.Object.AsQueryable().Where(where.where, where.parameters).ToArray();
 
             Console.ReadKey();
         }
