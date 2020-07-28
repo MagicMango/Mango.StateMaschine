@@ -7,7 +7,7 @@ namespace Mango.StateMaschine.Extensions
 {
     public static class FilterQueryObjectExtension
     {
-        public static (string where, object[] parameters) ToWhereClause<TObject>(this FilterQueryObject<TObject> filterQueryObject)
+        public static (string where, object[] parameters) ToDynamicFilter<TObject>(this FilterQueryObject<TObject> filterQueryObject)
             where TObject : class
         {
             string where = null;

@@ -69,7 +69,7 @@ namespace Mango.StateMaschine
                 })
             };
 
-            var where = filterprops.ToWhereClause();
+            var where = filterprops.ToDynamicFilter();
 
             var r = filterprops.Object.AsQueryable().Where(where.where, where.parameters).ToArray();
 
